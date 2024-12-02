@@ -4,10 +4,10 @@ Welcome to the Advent of Code 2024 project! This repository contains solutions t
 
 ## Running the Solutions
 
-Each solution is written in TypeScript and can be run using `npx tsx`. To execute a specific solution, use the following command:
+Each solution is written in TypeScript and can be run using bun install bun or use npx `(npx) bun run`. To execute a specific solution, use the following command:
 
 ```sh
-npx tsx path/to/solution.ts
+(npx) bun run path/to/solution.ts
 ```
 
 Replace `path/to/solution.ts` with the relative path to the TypeScript file you want to run.

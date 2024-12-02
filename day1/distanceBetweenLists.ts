@@ -1,4 +1,4 @@
-import { list1, list2 } from "./input";
+import { readLines } from "../utils";
 
 /**
  * Calculates the distance between two lists of numbers.
@@ -29,4 +29,6 @@ const getDistanceBetweenLists = (
   return totalDistance;
 };
 
-console.log(getDistanceBetweenLists(list1, list2)); // 2970687
+const input = readLines('day1/input.txt');
+console.log(input);
+// console.log(getDistanceBetweenLists(list1, list2)); // 2970687
