@@ -1,13 +1,12 @@
 import { processFile } from "../utils";
 
-const getCalibrationResult = (rawInput: string, isP2?: boolean) => {
+const getCalibrationResult = (rawInput: string, part2?: boolean) => {
   const input = rawInput.split("\n").map((l) => l.split(/[^\d]+/).map(Number));
-  console.log(input);
   return input.reduce((total, [target, ...values]) => {
     const operators = [
       (a: number, b: number) => a * b,
       (a: number, b: number) => a + b,
-      ...(isP2 ? [(a: number, b: number) => Number(`${a}${b}`)] : []),
+      ...(part2 ? [(a: number, b: number) => Number(`${a}${b}`)] : []),
     ];
     const evaluate = (numbers: number[]) => {
       if (numbers[0] > target) return false;
